@@ -83,3 +83,50 @@ is_true = True
 print(type(is_true))
 is_false = False
 print(type(is_false))
+
+#operadores numericos
+aa = 10
+bb = 20
+
+print(aa + bb)
+print(aa - bb)
+print(aa * bb)
+print(aa / bb)
+
+aa += 2
+print(aa)
+aa -= 2
+print(aa)
+aa *= 2
+print(aa)
+aa /= 2
+print(aa)
+
+# precedencia de operadores
+operacion_1 = 2 + 3 * 5
+print(operacion_1)
+
+# uso de paréntesis
+operacion_2 = (2 + 3) * 5
+print(operacion_2)
+
+# uso de exponentes
+operacion_3 = 2 + 3 * 5 ** 2
+print(operacion_3)
+
+# combinación de paréntesis y exponentes
+operacion_4 = (2 + 3 * 5) ** 2
+print(operacion_4)
+
+# mayor que
+print(aa > bb)
+# menor que
+print(aa < bb)
+# mayor o igual que
+print(aa >= bb)
+# menor o igual que
+print(aa <= bb)
+# igual que
+print(aa == bb)
+# diferente que
+print(aa != bb)
