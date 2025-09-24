@@ -130,3 +130,45 @@ print(aa <= bb)
 print(aa == bb)
 # diferente que
 print(aa != bb)
+
+# your_name = input("¿Cuál es tu nombre? ")
+# print("Hola " + your_name)
+# your_age = int(input("¿Cuántos años tienes? "))
+# print("Tienes " + str(your_age) + " años")
+
+# Listas
+todo = ["Aprender Python", "Hacer un proyecto", "Conseguir un trabajo"]
+print(todo)
+print(type(todo))
+print(len(todo))
+print(todo[0])
+print(todo[1])
+print(todo[0:1])
+
+# Listas pueden tener diferentes tipos de datos
+numbers = [1,2,3,4,'cinco',6.0]
+print(numbers)
+print(type(numbers))
+
+string = 'Hola soy una cadena'
+print(string[1:5])
+
+# Listas pueden ser modificadas
+new_list = [1,2,3,4,5, 'seis', 7.0, True, [8,9,10]]
+new_list.append('once')
+print(new_list)
+new_list.insert(0, 'cero')
+print(new_list)
+print(new_list.index(3))
+
+numbers_list = [1,2,3,4,5, 6,7,8,9,10]
+print(max(numbers_list))
+print(min(numbers_list))
+print(sum(numbers_list))
+print(numbers_list)
+del numbers_list[0]
+print(numbers_list)
+del numbers_list[2:4]
+print(numbers_list)
+# del numbers_list
+# print(numbers_list)  # Esto generará un error porque la lista ha sido eliminada
