@@ -223,3 +223,46 @@ print(type(my_tuple))
 print(my_tuple[0])
 # las tuplas no pueden ser modificadas
 # my_tuple[0] = 10  # Esto generará un error
+
+
+# Diccionarios
+print("DICCIONARIOS")
+my_dict = {
+    'nombre': 'Daniel',
+    'edad': 30,
+    'ciudad': 'Bogotá'
+}
+print(my_dict)
+print(type(my_dict))
+print(my_dict['nombre'])
+print(my_dict.get('edad'))
+my_dict['edad'] = 31
+print(my_dict)
+my_dict['profesion'] = 'Ingeniero'
+print(my_dict)
+del my_dict['ciudad']
+print(my_dict)
+print(len(my_dict))
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.items()) # devuelve una lista de tuplas con los pares clave-valor
+
+# Diccionarios anidados
+my_dict_nested = {
+    'nombre': 'Daniel',
+    'edad': 30,
+    'direccion': {
+        'ciudad': 'Bogotá',
+        'pais': 'Colombia'
+    },
+    'hijos': ['Samuel'],
+    'mascotas': None
+}
+print(my_dict_nested)
+print(my_dict_nested['direccion'])
+print(my_dict_nested['direccion']['ciudad'])
+print(my_dict_nested['hijos'][0])
+print(my_dict_nested['mascotas'])
+print(type(my_dict_nested['mascotas']))
+print(my_dict_nested['mascotas'] is None)  # verifica si es None
+print(my_dict_nested['mascotas'] is not None)  # verifica si no es None
