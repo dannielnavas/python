@@ -51,3 +51,35 @@ print(lowerCaseName.upper())
 space_name = '   danniel    '
 # elimina los espacios en blanco al inicio y al final
 print(space_name.strip())
+
+
+x = 10
+# tipo de dato int
+print(type(x))
+y = 3.534
+# tipo de dato float
+print(type(y))
+# Notación científica para datos muy grandes o muy pequeños
+z = 1.2e6
+print(type(z))
+# Notación científica para datos muy grandes o muy pequeños
+a = 2.e-4
+print(type(a))
+
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+print(x // y)  # división entera
+print(x % y)   # módulo
+print(x ** 2)  # potencia
+print(x ** 3)  # potencia
+print(pow(x, 3))  # potencia
+print(round(y))  # redondeo
+print(abs(-4.5))  # valor absoluto
+print(abs(4.5))  # valor absoluto
+
+is_true = True
+print(type(is_true))
+is_false = False
+print(type(is_false))
