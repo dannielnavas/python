@@ -194,3 +194,32 @@ list_a.append(4)
 print(list_c)
 print(list_a)
 print(list_b)
+
+# matrices
+print("MATRICES")
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+print(matrix)
+print(matrix[0])
+print(matrix[0][1])
+print(matrix[1][2])
+print(matrix[2][0])
+matrix[0][0] = 10
+print(matrix)
+matrix.append([11,12,13])
+print(matrix)
+matrix[1].append(14)
+print(matrix)
+
+
+# tuplas
+print("TUPLAS")
+my_tuple = (1,2,3,4,5) # las tuplas se definen con paréntesis o sin ellos pero separados por comas (1,2,3,4,5) o 1,2,3,4,5 Python inferirá que es una tupla
+print(my_tuple)
+print(type(my_tuple))
+print(my_tuple[0])
+# las tuplas no pueden ser modificadas
+# my_tuple[0] = 10  # Esto generará un error
