@@ -172,3 +172,25 @@ del numbers_list[2:4]
 print(numbers_list)
 # del numbers_list
 # print(numbers_list)  # Esto generará un error porque la lista ha sido eliminada
+
+
+list_a = [1,2,3]
+list_b = list_a
+print(list_a)
+print(list_b)
+del list_a[0]
+print(list_b)  # list_b aún existe porque es una referencia a la lista original
+# print(list_a)  # Esto generará un error porque list_a ha sido eliminada
+print(id(list_a))
+print(id(list_b))
+
+list_c = list_a[:]
+print(list_c)
+print(id(list_c))
+print(id(list_a))
+print(id(list_b))
+
+list_a.append(4)
+print(list_c)
+print(list_a)
+print(list_b)
