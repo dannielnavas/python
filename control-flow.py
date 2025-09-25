@@ -73,3 +73,65 @@ for num in numbers:
     if num == 3:
         continue  # Skip the rest of the loop when num is 3
     print(num)
+
+# example of iterating
+
+my_list = [10, 20, 30, 40, 50]
+
+my_iterator = iter(my_list)
+
+# using next() to get elements from the iterator
+print(next(my_iterator))  # Output: 10
+print(next(my_iterator))  # Output: 20
+print(next(my_iterator))  # Output: 30
+print(next(my_iterator))  # Output: 40
+print(next(my_iterator))  # Output: 50
+
+text = "Hello World"
+
+iter_text = iter(text)
+
+# print(next(iter_text))  # Output: H
+# print(next(iter_text))  # Output: e
+# print(next(iter_text))  # Output: l
+# print(next(iter_text))  # Output: l
+# print(next(iter_text))  # Output: o
+# print(next(iter_text))  # Output:
+# print(next(iter_text))  # Output: W
+# print(next(iter_text))  # Output: o
+# print(next(iter_text))  # Output: r
+# print(next(iter_text))  # Output: l
+# print(next(iter_text))  # Output: d
+
+for char in iter_text:
+    print(char)
+
+
+# limit
+
+limit = 10
+
+odd_itter = iter(range(1, limit+1, 2)) # Create an iterator for odd numbers up to limit
+
+for odd in odd_itter:
+    print(odd)
+
+def my_generator():
+    yield 1
+    yield 2
+    yield 3
+
+for value in my_generator():
+    print(value)
+
+
+# Fibonacci generator
+
+def fibonacci(n):
+    a, b = 0, 1 # Starting values a = 0 and b = 1
+    while a < n:
+        yield a
+        a, b = b, a + b  # Update values to the next Fibonacci numbers
+
+for num in fibonacci(50):
+    print(num)
