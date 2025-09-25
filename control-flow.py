@@ -135,3 +135,32 @@ def fibonacci(n):
 
 for num in fibonacci(50):
     print(num)
+
+
+# comprehension list
+
+squares = [x**2 for x in range(1, 11)] # List of squares of numbers from 1 to 10
+print(squares)
+
+
+celsius = [0, 10, 20, 34.5]
+fahrenheit = [((9/5)*temp + 32) for temp in celsius] # Convert Celsius to Fahrenheit
+print(fahrenheit)
+
+
+evens = [x for x in range(1, 21) if x % 2 == 0] # List of even numbers from 1 to 20
+print(evens)
+
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+transposed = [[row[i] for row in matrix] for i in range(len(matrix[0]))] # Transpose the 2D matrix
+
+print("Original matrix:")
+print(matrix)
+
+print("Transposed matrix:")
+print(transposed)
+
+flattened = [num for row in matrix for num in row] # Flatten the 2D matrix into a 1D list
+print(flattened)
