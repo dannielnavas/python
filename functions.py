@@ -100,3 +100,38 @@ fibonacci_of_6 = fibonacci(6)
 print(fibonacci_of_6)
 fibonacci_of_0 = fibonacci(0)
 print(fibonacci_of_0)
+
+
+# Exceptions
+
+try:
+    pass
+except:
+    pass
+
+try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+finally:
+    print("Execution completed.")
+
+
+try:
+    result = 10 / 'a'
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+except ValueError as e:
+    print(f"Value Error: {e}")
+except TypeError as e:
+    print(f"Type Error: {e}")
+finally:
+    print("Execution completed.")
+
+def print_exception_hierarchy(exception_class, indent=0):
+    print(' ' * indent + exception_class.__name__)
+    for subclass in exception_class.__subclasses__():
+        print_exception_hierarchy(subclass, indent + 4)
+
+# Imprimir la jerarquía comenzando desde la clase base Exception
+print_exception_hierarchy(Exception)
